@@ -50,4 +50,4 @@ When handing work from one tool to another, include:
 - definition of done
 - current risks or open questions
 
-Use the shared ready-to-fill file at [shared-handoff-template.md](/Users/oliviercappelle/Projects/ai/claude-orchestrator-setup-2/docs/templates/shared-handoff-template.md) when you want a direct Claude -> Codex or Claude -> Gemini handoff.
+Use the shared ready-to-fill file at [shared-handoff-template.md](./templates/shared-handoff-template.md) when you want a direct Claude -> Codex or Claude -> Gemini handoff.

@@ -4,9 +4,9 @@ These templates are the convenience layer for moving work between Claude, Codex,
 
 ## Files
 
-- [shared-handoff-template.md](/Users/oliviercappelle/Projects/ai/claude-orchestrator-setup-2/docs/templates/shared-handoff-template.md)
-- [codex-feature-handoff.md](/Users/oliviercappelle/Projects/ai/claude-orchestrator-setup-2/docs/templates/codex-feature-handoff.md)
-- [codex-bugfix-handoff.md](/Users/oliviercappelle/Projects/ai/claude-orchestrator-setup-2/docs/templates/codex-bugfix-handoff.md)
+- [shared-handoff-template.md](./templates/shared-handoff-template.md)
+- [codex-feature-handoff.md](./templates/codex-feature-handoff.md)
+- [codex-bugfix-handoff.md](./templates/codex-bugfix-handoff.md)
 
 ## Recommended Usage
 

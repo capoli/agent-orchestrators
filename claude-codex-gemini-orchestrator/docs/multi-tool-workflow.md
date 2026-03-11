@@ -95,15 +95,15 @@ Focus on regressions and missing tests.
 
 Use these files for repeatable handoffs:
 
-- [shared-handoff-template.md](/Users/oliviercappelle/Projects/ai/claude-orchestrator-setup-2/docs/templates/shared-handoff-template.md)
-- [codex-feature-handoff.md](/Users/oliviercappelle/Projects/ai/claude-orchestrator-setup-2/docs/templates/codex-feature-handoff.md)
-- [codex-bugfix-handoff.md](/Users/oliviercappelle/Projects/ai/claude-orchestrator-setup-2/docs/templates/codex-bugfix-handoff.md)
-- [handoff-templates.md](/Users/oliviercappelle/Projects/ai/claude-orchestrator-setup-2/docs/handoff-templates.md)
+- [shared-handoff-template.md](./templates/shared-handoff-template.md)
+- [codex-feature-handoff.md](./templates/codex-feature-handoff.md)
+- [codex-bugfix-handoff.md](./templates/codex-bugfix-handoff.md)
+- [handoff-templates.md](./handoff-templates.md)
 
 And these Claude skills to emit the handoff directly:
 
-- [emit-codex-handoff](/Users/oliviercappelle/Projects/ai/claude-orchestrator-setup-2/.claude/skills/emit-codex-handoff/SKILL.md)
-- [emit-gemini-handoff](/Users/oliviercappelle/Projects/ai/claude-orchestrator-setup-2/.claude/skills/emit-gemini-handoff/SKILL.md)
+- [emit-codex-handoff](../.claude/skills/emit-codex-handoff/SKILL.md)
+- [emit-gemini-handoff](../.claude/skills/emit-gemini-handoff/SKILL.md)
 
 ## Practical Rule
 

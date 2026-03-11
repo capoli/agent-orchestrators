@@ -115,13 +115,13 @@ Use the skills referenced by each specialist agent rather than inventing a new w
 
 ## File Guide
 
-- [docs/agent-orchestration-guide.md](/Users/oliviercappelle/Projects/ai/agent-orchestrators/claude-saas-orchestrator/docs/agent-orchestration-guide.md): primary guide for orchestration rules, sequencing, and failure modes
-- [claude-saas-orchestrator/.claude/workflows/saas-build.md](/Users/oliviercappelle/Projects/ai/agent-orchestrators/claude-saas-orchestrator/.claude/workflows/saas-build.md): default execution order and release-readiness rules
-- [claude-saas-orchestrator/.claude/commands/build-saas.md](/Users/oliviercappelle/Projects/ai/agent-orchestrators/claude-saas-orchestrator/.claude/commands/build-saas.md): command entrypoint for the standard delivery pass
-- [claude-saas-orchestrator/.claude/memory/project-context.md](/Users/oliviercappelle/Projects/ai/agent-orchestrators/claude-saas-orchestrator/.claude/memory/project-context.md): shared context that all agents should read and update
-- [claude_full_production_repo.txt](/Users/oliviercappelle/Projects/ai/agent-orchestrators/claude-saas-orchestrator/claude_full_production_repo.txt): exported scaffold of the baseline `.claude` repo
-- [claude_full_production_repo_with_skills.txt](/Users/oliviercappelle/Projects/ai/agent-orchestrators/claude-saas-orchestrator/claude_full_production_repo_with_skills.txt): expanded scaffold that also includes the full skill definitions
-- [claude_skills_only.txt](/Users/oliviercappelle/Projects/ai/agent-orchestrators/claude-saas-orchestrator/claude_skills_only.txt): extracted skill library reference
+- [docs/agent-orchestration-guide.md](./docs/agent-orchestration-guide.md): primary guide for orchestration rules, sequencing, and failure modes
+- [claude-saas-orchestrator/.claude/workflows/saas-build.md](./.claude/workflows/saas-build.md): default execution order and release-readiness rules
+- [claude-saas-orchestrator/.claude/commands/build-saas.md](./.claude/commands/build-saas.md): command entrypoint for the standard delivery pass
+- [claude-saas-orchestrator/.claude/memory/project-context.md](./.claude/memory/project-context.md): shared context that all agents should read and update
+- [claude_full_production_repo.txt](./claude_full_production_repo.txt): exported scaffold of the baseline `.claude` repo
+- [claude_full_production_repo_with_skills.txt](./claude_full_production_repo_with_skills.txt): expanded scaffold that also includes the full skill definitions
+- [claude_skills_only.txt](./claude_skills_only.txt): extracted skill library reference
 
 ## Release Readiness
 
