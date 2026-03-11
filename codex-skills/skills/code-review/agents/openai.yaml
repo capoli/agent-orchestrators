@@ -1,0 +1,4 @@
+interface:
+  display_name: "Code Review"
+  short_description: "High-signal review for PRs and diffs"
+  default_prompt: "Use $code-review to review this PR or diff, filter out weak comments, and return only high-confidence findings with file references."

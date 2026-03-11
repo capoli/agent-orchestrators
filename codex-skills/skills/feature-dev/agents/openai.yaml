@@ -1,0 +1,4 @@
+interface:
+  display_name: "Feature Development"
+  short_description: "Investigate and ship scoped changes"
+  default_prompt: "Use $feature-dev to trace this request through the repo, implement the smallest correct change, and verify it."

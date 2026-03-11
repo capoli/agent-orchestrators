@@ -1,0 +1,4 @@
+interface:
+  display_name: "Frontend Design"
+  short_description: "Sharper UI direction from product briefs"
+  default_prompt: "Use $frontend-design to review this screen and turn the product request into concrete UI, UX, and implementation guidance."
