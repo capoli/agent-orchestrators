@@ -1,0 +1,1659 @@
+CLAUDE SKILLS LIBRARY
+
+Extracted skills from repo specification.
+
+===FILE_START=== PATH: .claude/skills/project-management/skill.md name:
+project-management
+
+description: Plan and coordinate feature delivery across multiple agents
+and workstreams.
+
+when_to_use: Use this skill when the task directly involves project
+management responsibilities, decisions, implementation, or validation.
+
+tools_allowed: - read_files - write_files - create_files - run_shell
+
+context_to_load: - docs/prd.md - docs/architecture.md -
+docs/api-spec.md - docs/db-schema.md - tasks/backlog.md -
+.claude/memory/project-context.md - relevant source directories
+
+inputs: - task description - relevant project files - architecture
+context - related documentation
+
+outputs: - implementation plan - proposed changes - code or
+configuration when applicable - validation steps
+
+execution_rules: 1. Read the relevant docs and code before proposing
+changes. 2. Keep outputs deterministic and structured. 3. Prefer
+production-ready patterns over placeholders. 4. State assumptions when
+required context is missing. 5. Name files explicitly when generating or
+modifying artifacts.
+
+required_output_format: ### Summary What is being done and why.
+
+Plan
+
+Ordered implementation steps.
+
+Artifacts
+
+Files to create or modify.
+
+Implementation
+
+Concrete code, config, or content.
+
+Validation
+
+How to verify correctness.
+
+Risks
+
+Potential issues, edge cases, or follow-up items. ===FILE_END===
+
+===FILE_START=== PATH: .claude/skills/workflow-orchestration/skill.md
+name: workflow-orchestration
+
+description: Route tasks between agents, enforce execution order, and
+merge outputs.
+
+when_to_use: Use this skill when the task directly involves workflow
+orchestration responsibilities, decisions, implementation, or
+validation.
+
+tools_allowed: - read_files - write_files - create_files - run_shell
+
+context_to_load: - docs/prd.md - docs/architecture.md -
+docs/api-spec.md - docs/db-schema.md - tasks/backlog.md -
+.claude/memory/project-context.md - relevant source directories
+
+inputs: - task description - relevant project files - architecture
+context - related documentation
+
+outputs: - implementation plan - proposed changes - code or
+configuration when applicable - validation steps
+
+execution_rules: 1. Read the relevant docs and code before proposing
+changes. 2. Keep outputs deterministic and structured. 3. Prefer
+production-ready patterns over placeholders. 4. State assumptions when
+required context is missing. 5. Name files explicitly when generating or
+modifying artifacts.
+
+required_output_format: ### Summary What is being done and why.
+
+Plan
+
+Ordered implementation steps.
+
+Artifacts
+
+Files to create or modify.
+
+Implementation
+
+Concrete code, config, or content.
+
+Validation
+
+How to verify correctness.
+
+Risks
+
+Potential issues, edge cases, or follow-up items. ===FILE_END===
+
+===FILE_START=== PATH: .claude/skills/task-planning/skill.md name:
+task-planning
+
+description: Break down work into deterministic, ordered steps with
+clear deliverables.
+
+when_to_use: Use this skill when the task directly involves task
+planning responsibilities, decisions, implementation, or validation.
+
+tools_allowed: - read_files - write_files - create_files - run_shell
+
+context_to_load: - docs/prd.md - docs/architecture.md -
+docs/api-spec.md - docs/db-schema.md - tasks/backlog.md -
+.claude/memory/project-context.md - relevant source directories
+
+inputs: - task description - relevant project files - architecture
+context - related documentation
+
+outputs: - implementation plan - proposed changes - code or
+configuration when applicable - validation steps
+
+execution_rules: 1. Read the relevant docs and code before proposing
+changes. 2. Keep outputs deterministic and structured. 3. Prefer
+production-ready patterns over placeholders. 4. State assumptions when
+required context is missing. 5. Name files explicitly when generating or
+modifying artifacts.
+
+required_output_format: ### Summary What is being done and why.
+
+Plan
+
+Ordered implementation steps.
+
+Artifacts
+
+Files to create or modify.
+
+Implementation
+
+Concrete code, config, or content.
+
+Validation
+
+How to verify correctness.
+
+Risks
+
+Potential issues, edge cases, or follow-up items. ===FILE_END===
+
+===FILE_START=== PATH: .claude/skills/product-strategy/skill.md name:
+product-strategy
+
+description: Define product direction, business value, and scope for a
+SaaS product.
+
+when_to_use: Use this skill when the task directly involves product
+strategy responsibilities, decisions, implementation, or validation.
+
+tools_allowed: - read_files - write_files - create_files - run_shell
+
+context_to_load: - docs/prd.md - docs/architecture.md -
+docs/api-spec.md - docs/db-schema.md - tasks/backlog.md -
+.claude/memory/project-context.md - relevant source directories
+
+inputs: - task description - relevant project files - architecture
+context - related documentation
+
+outputs: - implementation plan - proposed changes - code or
+configuration when applicable - validation steps
+
+execution_rules: 1. Read the relevant docs and code before proposing
+changes. 2. Keep outputs deterministic and structured. 3. Prefer
+production-ready patterns over placeholders. 4. State assumptions when
+required context is missing. 5. Name files explicitly when generating or
+modifying artifacts.
+
+required_output_format: ### Summary What is being done and why.
+
+Plan
+
+Ordered implementation steps.
+
+Artifacts
+
+Files to create or modify.
+
+Implementation
+
+Concrete code, config, or content.
+
+Validation
+
+How to verify correctness.
+
+Risks
+
+Potential issues, edge cases, or follow-up items. ===FILE_END===
+
+===FILE_START=== PATH: .claude/skills/prd-generation/skill.md name:
+prd-generation
+
+description: Create structured PRDs with problem, users, features, and
+acceptance criteria.
+
+when_to_use: Use this skill when the task directly involves prd
+generation responsibilities, decisions, implementation, or validation.
+
+tools_allowed: - read_files - write_files - create_files - run_shell
+
+context_to_load: - docs/prd.md - docs/architecture.md -
+docs/api-spec.md - docs/db-schema.md - tasks/backlog.md -
+.claude/memory/project-context.md - relevant source directories
+
+inputs: - task description - relevant project files - architecture
+context - related documentation
+
+outputs: - implementation plan - proposed changes - code or
+configuration when applicable - validation steps
+
+execution_rules: 1. Read the relevant docs and code before proposing
+changes. 2. Keep outputs deterministic and structured. 3. Prefer
+production-ready patterns over placeholders. 4. State assumptions when
+required context is missing. 5. Name files explicitly when generating or
+modifying artifacts.
+
+required_output_format: ### Summary What is being done and why.
+
+Plan
+
+Ordered implementation steps.
+
+Artifacts
+
+Files to create or modify.
+
+Implementation
+
+Concrete code, config, or content.
+
+Validation
+
+How to verify correctness.
+
+Risks
+
+Potential issues, edge cases, or follow-up items. ===FILE_END===
+
+===FILE_START=== PATH: .claude/skills/user-story-generation/skill.md
+name: user-story-generation
+
+description: Translate product requirements into user stories and
+implementation-ready tasks.
+
+when_to_use: Use this skill when the task directly involves user story
+generation responsibilities, decisions, implementation, or validation.
+
+tools_allowed: - read_files - write_files - create_files - run_shell
+
+context_to_load: - docs/prd.md - docs/architecture.md -
+docs/api-spec.md - docs/db-schema.md - tasks/backlog.md -
+.claude/memory/project-context.md - relevant source directories
+
+inputs: - task description - relevant project files - architecture
+context - related documentation
+
+outputs: - implementation plan - proposed changes - code or
+configuration when applicable - validation steps
+
+execution_rules: 1. Read the relevant docs and code before proposing
+changes. 2. Keep outputs deterministic and structured. 3. Prefer
+production-ready patterns over placeholders. 4. State assumptions when
+required context is missing. 5. Name files explicitly when generating or
+modifying artifacts.
+
+required_output_format: ### Summary What is being done and why.
+
+Plan
+
+Ordered implementation steps.
+
+Artifacts
+
+Files to create or modify.
+
+Implementation
+
+Concrete code, config, or content.
+
+Validation
+
+How to verify correctness.
+
+Risks
+
+Potential issues, edge cases, or follow-up items. ===FILE_END===
+
+===FILE_START=== PATH: .claude/skills/market-analysis/skill.md name:
+market-analysis
+
+description: Assess market positioning, competitors, and
+differentiation.
+
+when_to_use: Use this skill when the task directly involves market
+analysis responsibilities, decisions, implementation, or validation.
+
+tools_allowed: - read_files - write_files - create_files - run_shell
+
+context_to_load: - docs/prd.md - docs/architecture.md -
+docs/api-spec.md - docs/db-schema.md - tasks/backlog.md -
+.claude/memory/project-context.md - relevant source directories
+
+inputs: - task description - relevant project files - architecture
+context - related documentation
+
+outputs: - implementation plan - proposed changes - code or
+configuration when applicable - validation steps
+
+execution_rules: 1. Read the relevant docs and code before proposing
+changes. 2. Keep outputs deterministic and structured. 3. Prefer
+production-ready patterns over placeholders. 4. State assumptions when
+required context is missing. 5. Name files explicitly when generating or
+modifying artifacts.
+
+required_output_format: ### Summary What is being done and why.
+
+Plan
+
+Ordered implementation steps.
+
+Artifacts
+
+Files to create or modify.
+
+Implementation
+
+Concrete code, config, or content.
+
+Validation
+
+How to verify correctness.
+
+Risks
+
+Potential issues, edge cases, or follow-up items. ===FILE_END===
+
+===FILE_START=== PATH: .claude/skills/software-architecture/skill.md
+name: software-architecture
+
+description: Design overall application architecture for
+maintainability, scale, and clarity.
+
+when_to_use: Use this skill when the task directly involves software
+architecture responsibilities, decisions, implementation, or validation.
+
+tools_allowed: - read_files - write_files - create_files - run_shell
+
+context_to_load: - docs/prd.md - docs/architecture.md -
+docs/api-spec.md - docs/db-schema.md - tasks/backlog.md -
+.claude/memory/project-context.md - relevant source directories
+
+inputs: - task description - relevant project files - architecture
+context - related documentation
+
+outputs: - implementation plan - proposed changes - code or
+configuration when applicable - validation steps
+
+execution_rules: 1. Read the relevant docs and code before proposing
+changes. 2. Keep outputs deterministic and structured. 3. Prefer
+production-ready patterns over placeholders. 4. State assumptions when
+required context is missing. 5. Name files explicitly when generating or
+modifying artifacts.
+
+required_output_format: ### Summary What is being done and why.
+
+Plan
+
+Ordered implementation steps.
+
+Artifacts
+
+Files to create or modify.
+
+Implementation
+
+Concrete code, config, or content.
+
+Validation
+
+How to verify correctness.
+
+Risks
+
+Potential issues, edge cases, or follow-up items. ===FILE_END===
+
+===FILE_START=== PATH: .claude/skills/system-design/skill.md name:
+system-design
+
+description: Define major components, data flows, and operational
+behavior.
+
+when_to_use: Use this skill when the task directly involves system
+design responsibilities, decisions, implementation, or validation.
+
+tools_allowed: - read_files - write_files - create_files - run_shell
+
+context_to_load: - docs/prd.md - docs/architecture.md -
+docs/api-spec.md - docs/db-schema.md - tasks/backlog.md -
+.claude/memory/project-context.md - relevant source directories
+
+inputs: - task description - relevant project files - architecture
+context - related documentation
+
+outputs: - implementation plan - proposed changes - code or
+configuration when applicable - validation steps
+
+execution_rules: 1. Read the relevant docs and code before proposing
+changes. 2. Keep outputs deterministic and structured. 3. Prefer
+production-ready patterns over placeholders. 4. State assumptions when
+required context is missing. 5. Name files explicitly when generating or
+modifying artifacts.
+
+required_output_format: ### Summary What is being done and why.
+
+Plan
+
+Ordered implementation steps.
+
+Artifacts
+
+Files to create or modify.
+
+Implementation
+
+Concrete code, config, or content.
+
+Validation
+
+How to verify correctness.
+
+Risks
+
+Potential issues, edge cases, or follow-up items. ===FILE_END===
+
+===FILE_START=== PATH: .claude/skills/api-design/skill.md name:
+api-design
+
+description: Specify clean, consistent APIs and contracts between
+systems.
+
+when_to_use: Use this skill when the task directly involves api design
+responsibilities, decisions, implementation, or validation.
+
+tools_allowed: - read_files - write_files - create_files - run_shell
+
+context_to_load: - docs/prd.md - docs/architecture.md -
+docs/api-spec.md - docs/db-schema.md - tasks/backlog.md -
+.claude/memory/project-context.md - relevant source directories
+
+inputs: - task description - relevant project files - architecture
+context - related documentation
+
+outputs: - implementation plan - proposed changes - code or
+configuration when applicable - validation steps
+
+execution_rules: 1. Read the relevant docs and code before proposing
+changes. 2. Keep outputs deterministic and structured. 3. Prefer
+production-ready patterns over placeholders. 4. State assumptions when
+required context is missing. 5. Name files explicitly when generating or
+modifying artifacts.
+
+required_output_format: ### Summary What is being done and why.
+
+Plan
+
+Ordered implementation steps.
+
+Artifacts
+
+Files to create or modify.
+
+Implementation
+
+Concrete code, config, or content.
+
+Validation
+
+How to verify correctness.
+
+Risks
+
+Potential issues, edge cases, or follow-up items. ===FILE_END===
+
+===FILE_START=== PATH: .claude/skills/database-design/skill.md name:
+database-design
+
+description: Design durable schemas, relationships, constraints, and
+indexing strategy.
+
+when_to_use: Use this skill when the task directly involves database
+design responsibilities, decisions, implementation, or validation.
+
+tools_allowed: - read_files - write_files - create_files - run_shell
+
+context_to_load: - docs/prd.md - docs/architecture.md -
+docs/api-spec.md - docs/db-schema.md - tasks/backlog.md -
+.claude/memory/project-context.md - relevant source directories
+
+inputs: - task description - relevant project files - architecture
+context - related documentation
+
+outputs: - implementation plan - proposed changes - code or
+configuration when applicable - validation steps
+
+execution_rules: 1. Read the relevant docs and code before proposing
+changes. 2. Keep outputs deterministic and structured. 3. Prefer
+production-ready patterns over placeholders. 4. State assumptions when
+required context is missing. 5. Name files explicitly when generating or
+modifying artifacts.
+
+required_output_format: ### Summary What is being done and why.
+
+Plan
+
+Ordered implementation steps.
+
+Artifacts
+
+Files to create or modify.
+
+Implementation
+
+Concrete code, config, or content.
+
+Validation
+
+How to verify correctness.
+
+Risks
+
+Potential issues, edge cases, or follow-up items. ===FILE_END===
+
+===FILE_START=== PATH: .claude/skills/api-development/skill.md name:
+api-development
+
+description: Implement production-grade backend APIs, validation, and
+business logic.
+
+when_to_use: Use this skill when the task directly involves api
+development responsibilities, decisions, implementation, or validation.
+
+tools_allowed: - read_files - write_files - create_files - run_shell
+
+context_to_load: - docs/prd.md - docs/architecture.md -
+docs/api-spec.md - docs/db-schema.md - tasks/backlog.md -
+.claude/memory/project-context.md - relevant source directories
+
+inputs: - task description - relevant project files - architecture
+context - related documentation
+
+outputs: - implementation plan - proposed changes - code or
+configuration when applicable - validation steps
+
+execution_rules: 1. Read the relevant docs and code before proposing
+changes. 2. Keep outputs deterministic and structured. 3. Prefer
+production-ready patterns over placeholders. 4. State assumptions when
+required context is missing. 5. Name files explicitly when generating or
+modifying artifacts.
+
+required_output_format: ### Summary What is being done and why.
+
+Plan
+
+Ordered implementation steps.
+
+Artifacts
+
+Files to create or modify.
+
+Implementation
+
+Concrete code, config, or content.
+
+Validation
+
+How to verify correctness.
+
+Risks
+
+Potential issues, edge cases, or follow-up items. ===FILE_END===
+
+===FILE_START=== PATH: .claude/skills/postgres/skill.md name: postgres
+
+description: Use PostgreSQL effectively for schema design, queries,
+migrations, and performance.
+
+when_to_use: Use this skill when the task directly involves postgres
+responsibilities, decisions, implementation, or validation.
+
+tools_allowed: - read_files - write_files - create_files - run_shell
+
+context_to_load: - docs/prd.md - docs/architecture.md -
+docs/api-spec.md - docs/db-schema.md - tasks/backlog.md -
+.claude/memory/project-context.md - relevant source directories
+
+inputs: - task description - relevant project files - architecture
+context - related documentation
+
+outputs: - implementation plan - proposed changes - code or
+configuration when applicable - validation steps
+
+execution_rules: 1. Read the relevant docs and code before proposing
+changes. 2. Keep outputs deterministic and structured. 3. Prefer
+production-ready patterns over placeholders. 4. State assumptions when
+required context is missing. 5. Name files explicitly when generating or
+modifying artifacts.
+
+required_output_format: ### Summary What is being done and why.
+
+Plan
+
+Ordered implementation steps.
+
+Artifacts
+
+Files to create or modify.
+
+Implementation
+
+Concrete code, config, or content.
+
+Validation
+
+How to verify correctness.
+
+Risks
+
+Potential issues, edge cases, or follow-up items. ===FILE_END===
+
+===FILE_START=== PATH: .claude/skills/redis/skill.md name: redis
+
+description: Apply Redis for caching, queues, rate limiting, and fast
+ephemeral state.
+
+when_to_use: Use this skill when the task directly involves redis
+responsibilities, decisions, implementation, or validation.
+
+tools_allowed: - read_files - write_files - create_files - run_shell
+
+context_to_load: - docs/prd.md - docs/architecture.md -
+docs/api-spec.md - docs/db-schema.md - tasks/backlog.md -
+.claude/memory/project-context.md - relevant source directories
+
+inputs: - task description - relevant project files - architecture
+context - related documentation
+
+outputs: - implementation plan - proposed changes - code or
+configuration when applicable - validation steps
+
+execution_rules: 1. Read the relevant docs and code before proposing
+changes. 2. Keep outputs deterministic and structured. 3. Prefer
+production-ready patterns over placeholders. 4. State assumptions when
+required context is missing. 5. Name files explicitly when generating or
+modifying artifacts.
+
+required_output_format: ### Summary What is being done and why.
+
+Plan
+
+Ordered implementation steps.
+
+Artifacts
+
+Files to create or modify.
+
+Implementation
+
+Concrete code, config, or content.
+
+Validation
+
+How to verify correctness.
+
+Risks
+
+Potential issues, edge cases, or follow-up items. ===FILE_END===
+
+===FILE_START=== PATH: .claude/skills/queue-systems/skill.md name:
+queue-systems
+
+description: Design and implement asynchronous background processing
+patterns.
+
+when_to_use: Use this skill when the task directly involves queue
+systems responsibilities, decisions, implementation, or validation.
+
+tools_allowed: - read_files - write_files - create_files - run_shell
+
+context_to_load: - docs/prd.md - docs/architecture.md -
+docs/api-spec.md - docs/db-schema.md - tasks/backlog.md -
+.claude/memory/project-context.md - relevant source directories
+
+inputs: - task description - relevant project files - architecture
+context - related documentation
+
+outputs: - implementation plan - proposed changes - code or
+configuration when applicable - validation steps
+
+execution_rules: 1. Read the relevant docs and code before proposing
+changes. 2. Keep outputs deterministic and structured. 3. Prefer
+production-ready patterns over placeholders. 4. State assumptions when
+required context is missing. 5. Name files explicitly when generating or
+modifying artifacts.
+
+required_output_format: ### Summary What is being done and why.
+
+Plan
+
+Ordered implementation steps.
+
+Artifacts
+
+Files to create or modify.
+
+Implementation
+
+Concrete code, config, or content.
+
+Validation
+
+How to verify correctness.
+
+Risks
+
+Potential issues, edge cases, or follow-up items. ===FILE_END===
+
+===FILE_START=== PATH: .claude/skills/auth-patterns/skill.md name:
+auth-patterns
+
+description: Implement secure authentication and session/token flows.
+
+when_to_use: Use this skill when the task directly involves auth
+patterns responsibilities, decisions, implementation, or validation.
+
+tools_allowed: - read_files - write_files - create_files - run_shell
+
+context_to_load: - docs/prd.md - docs/architecture.md -
+docs/api-spec.md - docs/db-schema.md - tasks/backlog.md -
+.claude/memory/project-context.md - relevant source directories
+
+inputs: - task description - relevant project files - architecture
+context - related documentation
+
+outputs: - implementation plan - proposed changes - code or
+configuration when applicable - validation steps
+
+execution_rules: 1. Read the relevant docs and code before proposing
+changes. 2. Keep outputs deterministic and structured. 3. Prefer
+production-ready patterns over placeholders. 4. State assumptions when
+required context is missing. 5. Name files explicitly when generating or
+modifying artifacts.
+
+required_output_format: ### Summary What is being done and why.
+
+Plan
+
+Ordered implementation steps.
+
+Artifacts
+
+Files to create or modify.
+
+Implementation
+
+Concrete code, config, or content.
+
+Validation
+
+How to verify correctness.
+
+Risks
+
+Potential issues, edge cases, or follow-up items. ===FILE_END===
+
+===FILE_START=== PATH: .claude/skills/react/skill.md name: react
+
+description: Build component-based UIs with predictable state and
+reusable structure.
+
+when_to_use: Use this skill when the task directly involves react
+responsibilities, decisions, implementation, or validation.
+
+tools_allowed: - read_files - write_files - create_files - run_shell
+
+context_to_load: - docs/prd.md - docs/architecture.md -
+docs/api-spec.md - docs/db-schema.md - tasks/backlog.md -
+.claude/memory/project-context.md - relevant source directories
+
+inputs: - task description - relevant project files - architecture
+context - related documentation
+
+outputs: - implementation plan - proposed changes - code or
+configuration when applicable - validation steps
+
+execution_rules: 1. Read the relevant docs and code before proposing
+changes. 2. Keep outputs deterministic and structured. 3. Prefer
+production-ready patterns over placeholders. 4. State assumptions when
+required context is missing. 5. Name files explicitly when generating or
+modifying artifacts.
+
+required_output_format: ### Summary What is being done and why.
+
+Plan
+
+Ordered implementation steps.
+
+Artifacts
+
+Files to create or modify.
+
+Implementation
+
+Concrete code, config, or content.
+
+Validation
+
+How to verify correctness.
+
+Risks
+
+Potential issues, edge cases, or follow-up items. ===FILE_END===
+
+===FILE_START=== PATH: .claude/skills/nextjs/skill.md name: nextjs
+
+description: Use Next.js for app routing, server/client boundaries, and
+production web delivery.
+
+when_to_use: Use this skill when the task directly involves nextjs
+responsibilities, decisions, implementation, or validation.
+
+tools_allowed: - read_files - write_files - create_files - run_shell
+
+context_to_load: - docs/prd.md - docs/architecture.md -
+docs/api-spec.md - docs/db-schema.md - tasks/backlog.md -
+.claude/memory/project-context.md - relevant source directories
+
+inputs: - task description - relevant project files - architecture
+context - related documentation
+
+outputs: - implementation plan - proposed changes - code or
+configuration when applicable - validation steps
+
+execution_rules: 1. Read the relevant docs and code before proposing
+changes. 2. Keep outputs deterministic and structured. 3. Prefer
+production-ready patterns over placeholders. 4. State assumptions when
+required context is missing. 5. Name files explicitly when generating or
+modifying artifacts.
+
+required_output_format: ### Summary What is being done and why.
+
+Plan
+
+Ordered implementation steps.
+
+Artifacts
+
+Files to create or modify.
+
+Implementation
+
+Concrete code, config, or content.
+
+Validation
+
+How to verify correctness.
+
+Risks
+
+Potential issues, edge cases, or follow-up items. ===FILE_END===
+
+===FILE_START=== PATH: .claude/skills/tailwind/skill.md name: tailwind
+
+description: Create consistent, utility-driven styling for fast UI
+delivery.
+
+when_to_use: Use this skill when the task directly involves tailwind
+responsibilities, decisions, implementation, or validation.
+
+tools_allowed: - read_files - write_files - create_files - run_shell
+
+context_to_load: - docs/prd.md - docs/architecture.md -
+docs/api-spec.md - docs/db-schema.md - tasks/backlog.md -
+.claude/memory/project-context.md - relevant source directories
+
+inputs: - task description - relevant project files - architecture
+context - related documentation
+
+outputs: - implementation plan - proposed changes - code or
+configuration when applicable - validation steps
+
+execution_rules: 1. Read the relevant docs and code before proposing
+changes. 2. Keep outputs deterministic and structured. 3. Prefer
+production-ready patterns over placeholders. 4. State assumptions when
+required context is missing. 5. Name files explicitly when generating or
+modifying artifacts.
+
+required_output_format: ### Summary What is being done and why.
+
+Plan
+
+Ordered implementation steps.
+
+Artifacts
+
+Files to create or modify.
+
+Implementation
+
+Concrete code, config, or content.
+
+Validation
+
+How to verify correctness.
+
+Risks
+
+Potential issues, edge cases, or follow-up items. ===FILE_END===
+
+===FILE_START=== PATH: .claude/skills/prompt-engineering/skill.md name:
+prompt-engineering
+
+description: Design reliable prompts and structured outputs for AI
+features.
+
+when_to_use: Use this skill when the task directly involves prompt
+engineering responsibilities, decisions, implementation, or validation.
+
+tools_allowed: - read_files - write_files - create_files - run_shell
+
+context_to_load: - docs/prd.md - docs/architecture.md -
+docs/api-spec.md - docs/db-schema.md - tasks/backlog.md -
+.claude/memory/project-context.md - relevant source directories
+
+inputs: - task description - relevant project files - architecture
+context - related documentation
+
+outputs: - implementation plan - proposed changes - code or
+configuration when applicable - validation steps
+
+execution_rules: 1. Read the relevant docs and code before proposing
+changes. 2. Keep outputs deterministic and structured. 3. Prefer
+production-ready patterns over placeholders. 4. State assumptions when
+required context is missing. 5. Name files explicitly when generating or
+modifying artifacts.
+
+required_output_format: ### Summary What is being done and why.
+
+Plan
+
+Ordered implementation steps.
+
+Artifacts
+
+Files to create or modify.
+
+Implementation
+
+Concrete code, config, or content.
+
+Validation
+
+How to verify correctness.
+
+Risks
+
+Potential issues, edge cases, or follow-up items. ===FILE_END===
+
+===FILE_START=== PATH: .claude/skills/rag-pipelines/skill.md name:
+rag-pipelines
+
+description: Build retrieval-augmented generation pipelines for grounded
+AI answers.
+
+when_to_use: Use this skill when the task directly involves rag
+pipelines responsibilities, decisions, implementation, or validation.
+
+tools_allowed: - read_files - write_files - create_files - run_shell
+
+context_to_load: - docs/prd.md - docs/architecture.md -
+docs/api-spec.md - docs/db-schema.md - tasks/backlog.md -
+.claude/memory/project-context.md - relevant source directories
+
+inputs: - task description - relevant project files - architecture
+context - related documentation
+
+outputs: - implementation plan - proposed changes - code or
+configuration when applicable - validation steps
+
+execution_rules: 1. Read the relevant docs and code before proposing
+changes. 2. Keep outputs deterministic and structured. 3. Prefer
+production-ready patterns over placeholders. 4. State assumptions when
+required context is missing. 5. Name files explicitly when generating or
+modifying artifacts.
+
+required_output_format: ### Summary What is being done and why.
+
+Plan
+
+Ordered implementation steps.
+
+Artifacts
+
+Files to create or modify.
+
+Implementation
+
+Concrete code, config, or content.
+
+Validation
+
+How to verify correctness.
+
+Risks
+
+Potential issues, edge cases, or follow-up items. ===FILE_END===
+
+===FILE_START=== PATH: .claude/skills/embeddings/skill.md name:
+embeddings
+
+description: Use embeddings for semantic retrieval and similarity-based
+workflows.
+
+when_to_use: Use this skill when the task directly involves embeddings
+responsibilities, decisions, implementation, or validation.
+
+tools_allowed: - read_files - write_files - create_files - run_shell
+
+context_to_load: - docs/prd.md - docs/architecture.md -
+docs/api-spec.md - docs/db-schema.md - tasks/backlog.md -
+.claude/memory/project-context.md - relevant source directories
+
+inputs: - task description - relevant project files - architecture
+context - related documentation
+
+outputs: - implementation plan - proposed changes - code or
+configuration when applicable - validation steps
+
+execution_rules: 1. Read the relevant docs and code before proposing
+changes. 2. Keep outputs deterministic and structured. 3. Prefer
+production-ready patterns over placeholders. 4. State assumptions when
+required context is missing. 5. Name files explicitly when generating or
+modifying artifacts.
+
+required_output_format: ### Summary What is being done and why.
+
+Plan
+
+Ordered implementation steps.
+
+Artifacts
+
+Files to create or modify.
+
+Implementation
+
+Concrete code, config, or content.
+
+Validation
+
+How to verify correctness.
+
+Risks
+
+Potential issues, edge cases, or follow-up items. ===FILE_END===
+
+===FILE_START=== PATH: .claude/skills/evaluation/skill.md name:
+evaluation
+
+description: Measure quality of AI and software outputs against defined
+criteria.
+
+when_to_use: Use this skill when the task directly involves evaluation
+responsibilities, decisions, implementation, or validation.
+
+tools_allowed: - read_files - write_files - create_files - run_shell
+
+context_to_load: - docs/prd.md - docs/architecture.md -
+docs/api-spec.md - docs/db-schema.md - tasks/backlog.md -
+.claude/memory/project-context.md - relevant source directories
+
+inputs: - task description - relevant project files - architecture
+context - related documentation
+
+outputs: - implementation plan - proposed changes - code or
+configuration when applicable - validation steps
+
+execution_rules: 1. Read the relevant docs and code before proposing
+changes. 2. Keep outputs deterministic and structured. 3. Prefer
+production-ready patterns over placeholders. 4. State assumptions when
+required context is missing. 5. Name files explicitly when generating or
+modifying artifacts.
+
+required_output_format: ### Summary What is being done and why.
+
+Plan
+
+Ordered implementation steps.
+
+Artifacts
+
+Files to create or modify.
+
+Implementation
+
+Concrete code, config, or content.
+
+Validation
+
+How to verify correctness.
+
+Risks
+
+Potential issues, edge cases, or follow-up items. ===FILE_END===
+
+===FILE_START=== PATH: .claude/skills/unit-testing/skill.md name:
+unit-testing
+
+description: Create fast, isolated tests for business logic and
+utilities.
+
+when_to_use: Use this skill when the task directly involves unit testing
+responsibilities, decisions, implementation, or validation.
+
+tools_allowed: - read_files - write_files - create_files - run_shell
+
+context_to_load: - docs/prd.md - docs/architecture.md -
+docs/api-spec.md - docs/db-schema.md - tasks/backlog.md -
+.claude/memory/project-context.md - relevant source directories
+
+inputs: - task description - relevant project files - architecture
+context - related documentation
+
+outputs: - implementation plan - proposed changes - code or
+configuration when applicable - validation steps
+
+execution_rules: 1. Read the relevant docs and code before proposing
+changes. 2. Keep outputs deterministic and structured. 3. Prefer
+production-ready patterns over placeholders. 4. State assumptions when
+required context is missing. 5. Name files explicitly when generating or
+modifying artifacts.
+
+required_output_format: ### Summary What is being done and why.
+
+Plan
+
+Ordered implementation steps.
+
+Artifacts
+
+Files to create or modify.
+
+Implementation
+
+Concrete code, config, or content.
+
+Validation
+
+How to verify correctness.
+
+Risks
+
+Potential issues, edge cases, or follow-up items. ===FILE_END===
+
+===FILE_START=== PATH: .claude/skills/integration-testing/skill.md name:
+integration-testing
+
+description: Test behavior across modules, services, and data
+boundaries.
+
+when_to_use: Use this skill when the task directly involves integration
+testing responsibilities, decisions, implementation, or validation.
+
+tools_allowed: - read_files - write_files - create_files - run_shell
+
+context_to_load: - docs/prd.md - docs/architecture.md -
+docs/api-spec.md - docs/db-schema.md - tasks/backlog.md -
+.claude/memory/project-context.md - relevant source directories
+
+inputs: - task description - relevant project files - architecture
+context - related documentation
+
+outputs: - implementation plan - proposed changes - code or
+configuration when applicable - validation steps
+
+execution_rules: 1. Read the relevant docs and code before proposing
+changes. 2. Keep outputs deterministic and structured. 3. Prefer
+production-ready patterns over placeholders. 4. State assumptions when
+required context is missing. 5. Name files explicitly when generating or
+modifying artifacts.
+
+required_output_format: ### Summary What is being done and why.
+
+Plan
+
+Ordered implementation steps.
+
+Artifacts
+
+Files to create or modify.
+
+Implementation
+
+Concrete code, config, or content.
+
+Validation
+
+How to verify correctness.
+
+Risks
+
+Potential issues, edge cases, or follow-up items. ===FILE_END===
+
+===FILE_START=== PATH: .claude/skills/e2e-testing/skill.md name:
+e2e-testing
+
+description: Validate complete user workflows through the application
+surface.
+
+when_to_use: Use this skill when the task directly involves e2e testing
+responsibilities, decisions, implementation, or validation.
+
+tools_allowed: - read_files - write_files - create_files - run_shell
+
+context_to_load: - docs/prd.md - docs/architecture.md -
+docs/api-spec.md - docs/db-schema.md - tasks/backlog.md -
+.claude/memory/project-context.md - relevant source directories
+
+inputs: - task description - relevant project files - architecture
+context - related documentation
+
+outputs: - implementation plan - proposed changes - code or
+configuration when applicable - validation steps
+
+execution_rules: 1. Read the relevant docs and code before proposing
+changes. 2. Keep outputs deterministic and structured. 3. Prefer
+production-ready patterns over placeholders. 4. State assumptions when
+required context is missing. 5. Name files explicitly when generating or
+modifying artifacts.
+
+required_output_format: ### Summary What is being done and why.
+
+Plan
+
+Ordered implementation steps.
+
+Artifacts
+
+Files to create or modify.
+
+Implementation
+
+Concrete code, config, or content.
+
+Validation
+
+How to verify correctness.
+
+Risks
+
+Potential issues, edge cases, or follow-up items. ===FILE_END===
+
+===FILE_START=== PATH: .claude/skills/playwright/skill.md name:
+playwright
+
+description: Automate browser flows and end-to-end validation with
+Playwright.
+
+when_to_use: Use this skill when the task directly involves playwright
+responsibilities, decisions, implementation, or validation.
+
+tools_allowed: - read_files - write_files - create_files - run_shell
+
+context_to_load: - docs/prd.md - docs/architecture.md -
+docs/api-spec.md - docs/db-schema.md - tasks/backlog.md -
+.claude/memory/project-context.md - relevant source directories
+
+inputs: - task description - relevant project files - architecture
+context - related documentation
+
+outputs: - implementation plan - proposed changes - code or
+configuration when applicable - validation steps
+
+execution_rules: 1. Read the relevant docs and code before proposing
+changes. 2. Keep outputs deterministic and structured. 3. Prefer
+production-ready patterns over placeholders. 4. State assumptions when
+required context is missing. 5. Name files explicitly when generating or
+modifying artifacts.
+
+required_output_format: ### Summary What is being done and why.
+
+Plan
+
+Ordered implementation steps.
+
+Artifacts
+
+Files to create or modify.
+
+Implementation
+
+Concrete code, config, or content.
+
+Validation
+
+How to verify correctness.
+
+Risks
+
+Potential issues, edge cases, or follow-up items. ===FILE_END===
+
+===FILE_START=== PATH: .claude/skills/docker/skill.md name: docker
+
+description: Containerize services for consistent local and deployed
+environments.
+
+when_to_use: Use this skill when the task directly involves docker
+responsibilities, decisions, implementation, or validation.
+
+tools_allowed: - read_files - write_files - create_files - run_shell
+
+context_to_load: - docs/prd.md - docs/architecture.md -
+docs/api-spec.md - docs/db-schema.md - tasks/backlog.md -
+.claude/memory/project-context.md - relevant source directories
+
+inputs: - task description - relevant project files - architecture
+context - related documentation
+
+outputs: - implementation plan - proposed changes - code or
+configuration when applicable - validation steps
+
+execution_rules: 1. Read the relevant docs and code before proposing
+changes. 2. Keep outputs deterministic and structured. 3. Prefer
+production-ready patterns over placeholders. 4. State assumptions when
+required context is missing. 5. Name files explicitly when generating or
+modifying artifacts.
+
+required_output_format: ### Summary What is being done and why.
+
+Plan
+
+Ordered implementation steps.
+
+Artifacts
+
+Files to create or modify.
+
+Implementation
+
+Concrete code, config, or content.
+
+Validation
+
+How to verify correctness.
+
+Risks
+
+Potential issues, edge cases, or follow-up items. ===FILE_END===
+
+===FILE_START=== PATH: .claude/skills/terraform/skill.md name: terraform
+
+description: Define cloud infrastructure as code with repeatable
+provisioning.
+
+when_to_use: Use this skill when the task directly involves terraform
+responsibilities, decisions, implementation, or validation.
+
+tools_allowed: - read_files - write_files - create_files - run_shell
+
+context_to_load: - docs/prd.md - docs/architecture.md -
+docs/api-spec.md - docs/db-schema.md - tasks/backlog.md -
+.claude/memory/project-context.md - relevant source directories
+
+inputs: - task description - relevant project files - architecture
+context - related documentation
+
+outputs: - implementation plan - proposed changes - code or
+configuration when applicable - validation steps
+
+execution_rules: 1. Read the relevant docs and code before proposing
+changes. 2. Keep outputs deterministic and structured. 3. Prefer
+production-ready patterns over placeholders. 4. State assumptions when
+required context is missing. 5. Name files explicitly when generating or
+modifying artifacts.
+
+required_output_format: ### Summary What is being done and why.
+
+Plan
+
+Ordered implementation steps.
+
+Artifacts
+
+Files to create or modify.
+
+Implementation
+
+Concrete code, config, or content.
+
+Validation
+
+How to verify correctness.
+
+Risks
+
+Potential issues, edge cases, or follow-up items. ===FILE_END===
+
+===FILE_START=== PATH: .claude/skills/ci-cd/skill.md name: ci-cd
+
+description: Create pipelines for testing, building, and deploying
+changes safely.
+
+when_to_use: Use this skill when the task directly involves ci cd
+responsibilities, decisions, implementation, or validation.
+
+tools_allowed: - read_files - write_files - create_files - run_shell
+
+context_to_load: - docs/prd.md - docs/architecture.md -
+docs/api-spec.md - docs/db-schema.md - tasks/backlog.md -
+.claude/memory/project-context.md - relevant source directories
+
+inputs: - task description - relevant project files - architecture
+context - related documentation
+
+outputs: - implementation plan - proposed changes - code or
+configuration when applicable - validation steps
+
+execution_rules: 1. Read the relevant docs and code before proposing
+changes. 2. Keep outputs deterministic and structured. 3. Prefer
+production-ready patterns over placeholders. 4. State assumptions when
+required context is missing. 5. Name files explicitly when generating or
+modifying artifacts.
+
+required_output_format: ### Summary What is being done and why.
+
+Plan
+
+Ordered implementation steps.
+
+Artifacts
+
+Files to create or modify.
+
+Implementation
+
+Concrete code, config, or content.
+
+Validation
+
+How to verify correctness.
+
+Risks
+
+Potential issues, edge cases, or follow-up items. ===FILE_END===
+
+===FILE_START=== PATH: .claude/skills/security-audit/skill.md name:
+security-audit
+
+description: Review code and architecture for common security
+weaknesses.
+
+when_to_use: Use this skill when the task directly involves security
+audit responsibilities, decisions, implementation, or validation.
+
+tools_allowed: - read_files - write_files - create_files - run_shell
+
+context_to_load: - docs/prd.md - docs/architecture.md -
+docs/api-spec.md - docs/db-schema.md - tasks/backlog.md -
+.claude/memory/project-context.md - relevant source directories
+
+inputs: - task description - relevant project files - architecture
+context - related documentation
+
+outputs: - implementation plan - proposed changes - code or
+configuration when applicable - validation steps
+
+execution_rules: 1. Read the relevant docs and code before proposing
+changes. 2. Keep outputs deterministic and structured. 3. Prefer
+production-ready patterns over placeholders. 4. State assumptions when
+required context is missing. 5. Name files explicitly when generating or
+modifying artifacts.
+
+required_output_format: ### Summary What is being done and why.
+
+Plan
+
+Ordered implementation steps.
+
+Artifacts
+
+Files to create or modify.
+
+Implementation
+
+Concrete code, config, or content.
+
+Validation
+
+How to verify correctness.
+
+Risks
+
+Potential issues, edge cases, or follow-up items. ===FILE_END===
+
+===FILE_START=== PATH: .claude/skills/oauth/skill.md name: oauth
+
+description: Implement and review OAuth provider flows and token
+handling.
+
+when_to_use: Use this skill when the task directly involves oauth
+responsibilities, decisions, implementation, or validation.
+
+tools_allowed: - read_files - write_files - create_files - run_shell
+
+context_to_load: - docs/prd.md - docs/architecture.md -
+docs/api-spec.md - docs/db-schema.md - tasks/backlog.md -
+.claude/memory/project-context.md - relevant source directories
+
+inputs: - task description - relevant project files - architecture
+context - related documentation
+
+outputs: - implementation plan - proposed changes - code or
+configuration when applicable - validation steps
+
+execution_rules: 1. Read the relevant docs and code before proposing
+changes. 2. Keep outputs deterministic and structured. 3. Prefer
+production-ready patterns over placeholders. 4. State assumptions when
+required context is missing. 5. Name files explicitly when generating or
+modifying artifacts.
+
+required_output_format: ### Summary What is being done and why.
+
+Plan
+
+Ordered implementation steps.
+
+Artifacts
+
+Files to create or modify.
+
+Implementation
+
+Concrete code, config, or content.
+
+Validation
+
+How to verify correctness.
+
+Risks
+
+Potential issues, edge cases, or follow-up items. ===FILE_END===
+
+===FILE_START=== PATH: .claude/skills/rbac/skill.md name: rbac
+
+description: Model roles, permissions, and authorization boundaries
+safely.
+
+when_to_use: Use this skill when the task directly involves rbac
+responsibilities, decisions, implementation, or validation.
+
+tools_allowed: - read_files - write_files - create_files - run_shell
+
+context_to_load: - docs/prd.md - docs/architecture.md -
+docs/api-spec.md - docs/db-schema.md - tasks/backlog.md -
+.claude/memory/project-context.md - relevant source directories
+
+inputs: - task description - relevant project files - architecture
+context - related documentation
+
+outputs: - implementation plan - proposed changes - code or
+configuration when applicable - validation steps
+
+execution_rules: 1. Read the relevant docs and code before proposing
+changes. 2. Keep outputs deterministic and structured. 3. Prefer
+production-ready patterns over placeholders. 4. State assumptions when
+required context is missing. 5. Name files explicitly when generating or
+modifying artifacts.
+
+required_output_format: ### Summary What is being done and why.
+
+Plan
+
+Ordered implementation steps.
+
+Artifacts
+
+Files to create or modify.
+
+Implementation
+
+Concrete code, config, or content.
+
+Validation
+
+How to verify correctness.
+
+Risks
+
+Potential issues, edge cases, or follow-up items. ===FILE_END===
+
+===FILE_START=== PATH: .claude/skills/threat-modeling/skill.md name:
+threat-modeling
+
+description: Identify likely threats, attack paths, and mitigations for
+the system.
+
+when_to_use: Use this skill when the task directly involves threat
+modeling responsibilities, decisions, implementation, or validation.
+
+tools_allowed: - read_files - write_files - create_files - run_shell
+
+context_to_load: - docs/prd.md - docs/architecture.md -
+docs/api-spec.md - docs/db-schema.md - tasks/backlog.md -
+.claude/memory/project-context.md - relevant source directories
+
+inputs: - task description - relevant project files - architecture
+context - related documentation
+
+outputs: - implementation plan - proposed changes - code or
+configuration when applicable - validation steps
+
+execution_rules: 1. Read the relevant docs and code before proposing
+changes. 2. Keep outputs deterministic and structured. 3. Prefer
+production-ready patterns over placeholders. 4. State assumptions when
+required context is missing. 5. Name files explicitly when generating or
+modifying artifacts.
+
+required_output_format: ### Summary What is being done and why.
+
+Plan
+
+Ordered implementation steps.
+
+Artifacts
+
+Files to create or modify.
+
+Implementation
+
+Concrete code, config, or content.
+
+Validation
+
+How to verify correctness.
+
+Risks
+
+Potential issues, edge cases, or follow-up items. ===FILE_END===

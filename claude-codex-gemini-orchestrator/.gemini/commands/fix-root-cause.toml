@@ -1,0 +1,26 @@
+description = "Investigate and fix one bug by proving the root cause first."
+prompt = """
+Use Gemini as a debugging assistant with a strict root-cause-first workflow.
+
+Treat any text passed after this command as the task input.
+
+Workflow:
+1. Read GEMINI.md first.
+2. Reproduce the issue or gather concrete evidence.
+3. Identify the most likely root cause.
+4. Only then implement the smallest safe fix.
+5. Validate the fix with the smallest relevant check.
+
+Constraints:
+- Do not guess.
+- Do not apply broad workarounds before understanding the cause.
+- Keep the fix narrow and explicit.
+
+Return:
+- reproduction status
+- evidence
+- likely root cause
+- changed files
+- validation performed
+- remaining risks
+"""

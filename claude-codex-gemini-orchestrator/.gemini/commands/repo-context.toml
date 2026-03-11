@@ -1,0 +1,22 @@
+description = "Map the relevant repository context before coding."
+prompt = """
+Use Gemini as a repo-context assistant for this repository.
+
+Treat any text passed after this command as the task input.
+
+Workflow:
+1. Read GEMINI.md first.
+2. Read only the most relevant files for the request.
+3. Summarize the current implementation and likely entrypoints.
+4. Identify the smallest file set that matters.
+5. Call out important unknowns, assumptions, and the safest next step.
+
+Do not make code changes unless the user explicitly asks for them.
+
+Return:
+- summary
+- relevant files
+- key interfaces
+- risks or unknowns
+- recommended next step
+"""

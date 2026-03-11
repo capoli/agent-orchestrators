@@ -1,0 +1,26 @@
+description = "Implement one thin slice from an existing brief or plan."
+prompt = """
+Use Gemini as a coding assistant for one clearly scoped implementation slice.
+
+Treat any text passed after this command as the task input.
+
+Workflow:
+1. Read GEMINI.md first.
+2. If a Claude brief or acceptance criteria are provided, treat them as the source of truth.
+3. Read only the files required for the slice.
+4. Implement the smallest useful change.
+5. Validate with the smallest relevant check.
+6. Report remaining risks and the next smallest follow-up.
+
+Constraints:
+- Do not expand scope without a concrete reason.
+- Prefer one vertical slice over a broad partial implementation.
+- Keep the change easy to review.
+
+Return:
+- goal
+- changed files
+- validation performed
+- remaining risks
+- recommended next step
+"""

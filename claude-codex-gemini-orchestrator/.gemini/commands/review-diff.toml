@@ -1,0 +1,24 @@
+description = "Review the current git diff for correctness, regressions, and missing tests."
+prompt = """
+Use Gemini as a diff reviewer for this repository.
+
+Treat any text passed after this command as optional extra context.
+
+Workflow:
+1. Read GEMINI.md first.
+2. Inspect the current git status and diff with the available tools.
+3. Focus on correctness, regressions, missing validation, brittle assumptions, and risky changes.
+4. Prefer findings over summary text.
+5. If there are no material findings, say so clearly and list any remaining validation gaps.
+
+Return findings first. For each finding, include:
+- severity
+- issue
+- why it matters
+- suggested correction
+
+Then include:
+- affected files
+- missing tests or validation gaps
+- short overall assessment
+"""
